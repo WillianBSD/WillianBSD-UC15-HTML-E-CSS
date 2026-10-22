@@ -1,0 +1,123 @@
+:root {
+--fundo: #000000;
+--cor-de-letra: #FFFFFF;
+--importante: #FFFF00;
+}
+
+body {
+    background-color: var(--fundo);
+
+}
+
+.introduction {
+color: #FFFFFF;
+font-family: "Commissioner", sans-serif;
+text-align: center;
+font-size: 60px;
+}
+
+a {
+color: var(--cor-de-letra);
+ font-family: "Roboto", sans-serif;
+ font-size: 15px;
+ font-weight: bold;
+ padding: 3px 7px;
+}
+
+.titulo1 {
+    color: #ff0000;
+    font-family: "Climate Crisis", sans-serif;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse; /* Inverte a ordem para funcionar com os seletores CSS */
+  justify-content: flex-end;
+  font-size: 2rem;
+}
+
+.rating input {
+  display: none; /* Esconde os botões de rádio originais */
+}
+
+.rating label {
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+/* Muda a cor da estrela ao passar o mouse ou quando selecionada */
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #f5b301;
+}
+
+.generico {
+color: var(--cor-de-letra);
+ font-family: "Roboto", sans-serif;
+}
+
+/* Container principal que limita a visualização */
+.carousel {
+  width: 100%;
+  max-width: 900px;
+  overflow: hidden;
+  position: relative;
+  background: #0d0d0d;
+  padding: 20px 0;
+  border-radius: 10px;
+}
+
+/* Faixa que contém todos os slides lado a lado */
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+/* Pausa a animação quando o usuário passa o mouse por cima */
+.carousel:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+/* Estilo individual de cada slide/imagem */
+.slide {
+  width: 200px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Definição da animação contínua */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+#comentario {
+    border-radius: 5px;
+    border: #ff0000;
+    background-color: #fff9f9;
+    width: 50%;
+    height: 40%;
+}
+
+.botão {
+  border-radius: 5px;
+  border: var(--cor-de-letra);
+  size: 30%;
+ align-items: center;
+}

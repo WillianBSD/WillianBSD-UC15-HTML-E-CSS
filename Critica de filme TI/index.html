@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Critica de Filme</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <header class="configura">
+        <nav class="configuranav">
+            <a href="#" class="link nav">Filmes</a>
+            <a href="#" class="link nav">Series</a>
+            <a href="#" class="link nav">Conta</a>
+        </nav>
+      </header>
+    <h1 class="introduction">
+        <span class="titulo1">Expetion</span><span class="titulo2"></span>Movie</h1>
+
+<div class="carousel">
+  <div class="carousel-track">
+    <!-- Grupo original de imagens -->
+    <div class="slide"><img src="ADC.jpg" alt="Descrição 1"></div>
+    <div class="slide"><img src="Avatar3.jpg" alt="Descrição 2"></div>
+    <div class="slide"><img src="Backroons.jpg"Descrição 3"></div>
+    <div class="slide"><img src="Sonic.3.jpg" alt="Descrição 4"></div>
+
+    <!-- Grupo duplicado para criar o efeito infinito -->
+    <div class="slide"><img src="ADC.jpg" alt="Descrição 1"></div>
+    <div class="slide"><img src="Avatar3.jpg" alt="Descrição 2"></div>
+    <div class="slide"><img src="Backroons.jpg" alt="Descrição 3"></div>
+    <div class="slide"><img src="Sonic.3.jpg" alt="Descrição 4"></div>
+  </div>
+</div>
+
+
+    <h2 class="generico">Sua avaliação:</h2>
+
+    <div class="rating">
+  <input type="radio" id="star5" name="rating" value="5" />
+  <label for="star5" title="5 estrelas">★</label>
+  
+  <input type="radio" id="star4" name="rating" value="4" />
+  <label for="star4" title="4 estrelas">★</label>
+  
+  <input type="radio" id="star3" name="rating" value="3" />
+  <label for="star3" title="3 estrelas">★</label>
+  
+  <input type="radio" id="star2" name="rating" value="2" />
+  <label for="star2" title="2 estrelas">★</label>
+  
+  <input type="radio" id="star1" name="rating" value="1" />
+  <label for="star1" title="1 estrela">★</label>
+</div>
+ <p class="generico">Deixe um comentario sobre sua opinião!</p>
+ <form action="/salvar-comentario" method="POST" class="">
+  <label for="comentario">Deixe seu comentário:</label><br>
+  <textarea id="comentario" name="comentario" rows="5" cols="40" placeholder="Escreva aqui..."></textarea><br><br>
+
+</form>
+
+<button class="botão">Enviar</button>
+
+
+    
+</body>
+</html>
