@@ -1,0 +1,33 @@
+:root {
+    --cor-de-letra-principal: #000000;
+    --cor-secundaria: #2e80ea;
+    --cor-terciaria: #e87af0;
+    --destaque: "Cantarell", sans-serif;
+    --secundaria: "Comic Relief", system-ui;
+}
+ .titulo {
+    color: #2e80ea;
+    text-align: center;
+    font-size: 50px;
+    font-family: var(--destaque);
+ }
+
+ .subtitulo {
+    color: var(--cor-de-letra-principal);
+    font-size: 30px;
+    font-family: var(--secundaria);
+    color: #1c3daa;
+ }
+ 
+ body {
+background: linear-gradient(to right, #78c0f7, #f6fcfd);
+ }
+ .saudação {
+    font-family: var(--secundaria);
+    background: #2e80ea;
+    border-radius: 10px;
+    color: aliceblue;
+    padding: 5px;
+    width: 50%;
+ }
+
