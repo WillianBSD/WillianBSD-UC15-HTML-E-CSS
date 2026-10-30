@@ -1,0 +1,38 @@
+:root {
+--cor-primaria: #ff9900;
+--secundaria: #3366ff;
+--main: "Ultra",sans-serif;
+--generico: "Cantarell", sans-serif;
+--fundo: #f6f27d;
+
+}
+
+#titulo1 {
+color: var(--cor-primaria);
+text-align: center;
+font-family: var(--main);
+}
+
+#titulo2 {
+color: var(--secundaria);
+text-align: center;
+font-family: var(--generico);
+}
+
+.nome {
+background-color: var(--fundo);
+border-color: var(--secundaria);
+border-radius: 5px;
+}
+
+#notas {
+    text-decoration: underline;
+    color: var(--secundaria);
+    font-family: var(--main);
+}
+button {
+color: var(--secundaria);
+background-color: var(--cor-primaria);
+border-radius: 5px;
+border: var(--secundaria);
+}
